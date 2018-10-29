@@ -1,0 +1,31 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:prism="http://prismlibrary.com/"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             x:Class="AwesomeAppIdea.UI.View.Controller_View"
+             mc:Ignorable="d"
+             x:Name="MainController"
+             ClipToBounds="True"
+             prism:ViewModelLocator.AutoWireViewModel="True" d:DesignWidth="487.797" d:DesignHeight="364.746">
+
+    <Grid>
+
+        <i:Interaction.Triggers>
+            <i:EventTrigger EventName="Loaded">
+                <prism:InvokeCommandAction Command="{Binding Loaded_Command}" CommandParameter="{Binding ElementName=MainController, Mode=OneWay}" />
+            </i:EventTrigger>
+            <i:EventTrigger EventName="Unloaded">
+                <prism:InvokeCommandAction Command="{Binding Unloaded_Command}" />
+            </i:EventTrigger>
+            <i:EventTrigger EventName="KeyDown">
+                <prism:InvokeCommandAction Command="{Binding KeyDown_Command}" />
+            </i:EventTrigger>
+            <i:EventTrigger EventName="KeyUp">
+                <prism:InvokeCommandAction Command="{Binding KeyUp_Command}" />
+            </i:EventTrigger>
+        </i:Interaction.Triggers>
+    </Grid>
+</UserControl>

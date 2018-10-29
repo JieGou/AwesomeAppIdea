@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>f3dc5280-5385-44b2-8c20-ad61a19d8a99</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>AwesomeAppIdea.Revit</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Client.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Commands\DockPane_Commands.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Contracts\IClientRVT.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Contracts\IRevitClientInformation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\DockPane_Extensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Provider\DockPane_Provider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)EntryPoint.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\Versions_Enum.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\Version_Extensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\RevitClientTheme_Model.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\RevitClientInformation_Model.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\MessageBox_Service.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Resources\REVIT2016.jpg" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Resources\REVIT2017.jpg" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Resources\REVIT2018.jpg" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Resources\REVIT2019.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Provider\" />
+  </ItemGroup>
+</Project>

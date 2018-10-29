@@ -1,0 +1,39 @@
+﻿<UserControl x:Class="AwesomeAppIdea.UI.View.Main_View"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:AwesomeAppIdea.UI.View"
+             xmlns:prism="http://prismlibrary.com/"
+             mc:Ignorable="d"
+             d:DesignHeight="1084" d:DesignWidth="1000"
+             MaxHeight="1084" MaxWidth="1000"
+             prism:ViewModelLocator.AutoWireViewModel="True">
+
+    <ScrollViewer VerticalScrollBarVisibility="Disabled">
+        <ScrollViewer.Background>
+            <ImageBrush ImageSource="/AwesomeAppIdea.UI;component/Resources/Space invaders_Background image.jpg" />
+        </ScrollViewer.Background>
+        <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition Height="Auto" />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <TextBlock FontSize="20" Margin="0,0,0,4" Foreground="#FF4AAF49">
+                <TextBlock.Text>
+                    <MultiBinding StringFormat="{}{0} {1}">
+                        <Binding Path="Info.Product" />
+                        <Binding Path="Info.Description" />
+                    </MultiBinding>
+                </TextBlock.Text>
+            </TextBlock>
+            <Border Grid.Row="1">
+                <local:Controller_View Width="640" Height="480" />
+            </Border>
+            <Grid  Grid.Row="2">
+                <Button Content="About" Command="{Binding About_Command}" HorizontalAlignment="Right" Width="50" Height="32" />
+            </Grid>
+        </Grid>
+    </ScrollViewer>
+</UserControl>

@@ -1,0 +1,13 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+	<PropertyGroup>
+		<DebugBundle>C:\ProgramData\Autodesk\ApplicationPlugins\AwesomeAppIdeaDEBUG.Bundle\Contents</DebugBundle>
+  	</PropertyGroup>
+
+	<Target Name="AfterBuild" Condition=" '$(Configuration)'=='Debug' ">
+		<Copy SourceFiles ="$(TargetDir)$(TargetFileName)" DestinationFolder="$(DebugBundle)" ContinueOnError="true"/>
+	</Target>
+	
+</Project>
+
+

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>687fe05a-4fa7-49ad-b7c5-5706712b5610</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>AwesomeAppIdea.Navisworks</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Client.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Contracts\INavisworksClientInformation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)EntryPoint.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums\Versions_Enum.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\Version_Extensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\Application_Helpers.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\NavisworksClientTheme_Model.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\NavisworksClientInformation_Model.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\MessageBox_Service.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Plugins\DockPane_PlugIn.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Resources\NAVIS2016.jpg" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Resources\NAVIS2017.jpg" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Resources\NAVIS2018.jpg" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Resources\NAVIS2019.jpg" />
+  </ItemGroup>
+</Project>
