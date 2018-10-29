@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>AwesomeAppIdea</Name>
+    <Assembly>AwesomeAppIdea.Revit.2016.dll</Assembly>
+    <ClientId>aed0b752-46da-499b-9d1f-54b0f98916fe</ClientId>
+    <FullClassName>AwesomeAppIdea.Revit.EntryPoint</FullClassName>
+    <VendorId>AWESOME</VendorId>
+    <VendorDescription>Awesome App Idea for Revit 2016</VendorDescription>
+  </AddIn>
+	<AddIn Type="Command">
+	<Assembly>"AwesomeAppIdea.Revit.2016.dll"</Assembly>
+	<ClientId>104f49f0-c732-410f-aa17-9f10e6aa4f4f</ClientId>
+	<FullClassName>AwesomeAppIdea.Revit.Commands.DockPaneShow_Command</FullClassName>
+	<Text>Awesome App Idea</Text>
+	<Description>Show awesome app idea dialog</Description>
+	<VendorId>AWESOME</VendorId>
+	<VendorDescription>Awesome App Idea for Revit 2016</VendorDescription>
+	</AddIn>  
+</RevitAddIns>

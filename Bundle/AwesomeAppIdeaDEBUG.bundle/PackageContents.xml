@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ApplicationPackage SchemaVersion="1.0"
+                    ProductType="Application"
+                    Name="AwesomeAppIdea"
+                    AppVersion="1.0.0.0"
+                    Description="Awesome App Idea plug-in"
+                    Author="Ben de Vries"
+                    ProductCode="{3d1af58f-73ef-4c40-a278-60a2599ce233}"
+                    UpgradeCode="{8419bfb8-eaaa-4663-b2bd-35c518f0c5cc}">
+
+  <Components>
+    <RuntimeRequirements OS="Win32|Win64" Platform="AutoCAD" SeriesMin="R20.1" SeriesMax="R20.1" />
+    <ComponentEntry AppName="AwesomeAppIdea" AppDescription="Awesome App Idea for AutoCAD 2016" ModuleName="./Contents/AwesomeAppIdea.AutoCAD.2016.dll" />
+  </Components>
+
+  <Components>
+    <RuntimeRequirements OS="Win32|Win64" Platform="AutoCAD" SeriesMin="R21.0" SeriesMax="R21.0" />
+    <ComponentEntry AppName="AwesomeAppIdea" AppDescription="Awesome App Idea for AutoCAD 2017 " ModuleName="./Contents/AwesomeAppIdea.AutoCAD.2017.dll" />
+  </Components>
+
+  <Components>
+    <RuntimeRequirements OS="Win32|Win64" Platform="AutoCAD" SeriesMin="R22.0" SeriesMax="R22.0" />
+    <ComponentEntry AppName="AwesomeAppIdea" AppDescription="Awesome App Idea  for AutoCAD 2018" ModuleName="./Contents/AwesomeAppIdea.AutoCAD.2018.dll" />
+  </Components>
+
+  <Components>
+    <RuntimeRequirements OS="Win32|Win64" Platform="AutoCAD" SeriesMin="R23.0" SeriesMax="R23.0" />
+    <ComponentEntry AppName="AwesomeAppIdea" AppDescription="Awesome App Idea  for AutoCAD 2019" ModuleName="./Contents/AwesomeAppIdea.AutoCAD.2019.dll" />
+  </Components>
+
+  <Components>
+    <RuntimeRequirements OS="Win64" Platform="NAVMAN|NAVSIM" SeriesMin="Nw13" SeriesMax="Nw13" />
+    <ComponentEntry AppName="AwesomeAppIdea" AppDescription="Awesome App Idea  for Navisworks 2016" AppType="ManagedPlugin" ModuleName="./Contents/AwesomeAppIdea.Navisworks.2016.dll" />
+  </Components>
+
+  <Components>
+    <RuntimeRequirements OS="Win64" Platform="NAVMAN|NAVSIM" SeriesMin="Nw14" SeriesMax="Nw14" />
+    <ComponentEntry AppName="AwesomeAppIdea" AppDescription="Awesome App Idea  for Navisworks 2017" AppType="ManagedPlugin" ModuleName="./Contents/AwesomeAppIdea.Navisworks.2017.dll" />
+  </Components>
+
+  <Components>
+    <RuntimeRequirements OS="Win64" Platform="NAVMAN|NAVSIM" SeriesMin="Nw15" SeriesMax="Nw15" />
+    <ComponentEntry AppName="AwesomeAppIdea" AppDescription="Awesome App Idea  for Navisworks 2018" AppType="ManagedPlugin" ModuleName="./Contents/AwesomeAppIdea.Navisworks.2018.dll" />
+  </Components>
+
+  <Components>
+    <RuntimeRequirements OS="Win64" Platform="NAVMAN|NAVSIM" SeriesMin="Nw16" SeriesMax="Nw16" />
+    <ComponentEntry AppName="AwesomeAppIdea" AppDescription="Awesome App Idea  for Navisworks 2019" AppType="ManagedPlugin" ModuleName="./Contents/AwesomeAppIdea.Navisworks.2019.dll" />
+  </Components>
+  
+  <Components>
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2016" SeriesMax="R2016"/>
+    <ComponentEntry AppName="AwesomeAppIdea" AppDescription="Awesome App Idea  for Revit 2016" ModuleName="./Contents/AwesomeAppIdea.Revit.2016.addin" />
+  </Components>
+  
+  <Components>
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2017" SeriesMax="R2017"/>
+    <ComponentEntry AppName="AwesomeAppIdea" AppDescription="Awesome App Idea  for Revit 2017" ModuleName="./Contents/AwesomeAppIdea.Revit.2017.addin" />
+  </Components>
+
+    <Components>
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2018" SeriesMax="R2018"/>
+    <ComponentEntry AppName="AwesomeAppIdea" AppDescription="Awesome App Idea  for Revit 2018" ModuleName="./Contents/AwesomeAppIdea.Revit.2018.addin" />
+  </Components>
+  
+  <Components>
+    <RuntimeRequirements OS="Win64" Platform="Revit" SeriesMin="R2019" SeriesMax="R2019"/>
+    <ComponentEntry AppName="AwesomeAppIdea" AppDescription="Awesome App Idea  for Revit 2019" ModuleName="./Contents/AwesomeAppIdea.Revit.2019.addin" />
+  </Components>  
+
+</ApplicationPackage>
