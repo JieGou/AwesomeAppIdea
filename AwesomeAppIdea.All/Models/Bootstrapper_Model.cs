@@ -85,6 +85,7 @@ namespace AwesomeAppIdea.Core.Components
 
             Container.RegisterType<IClientRVT, Client>();
             Container.RegisterType<IMessageBoxService, MessageBox_Service>();
+
         }
 
 #endif

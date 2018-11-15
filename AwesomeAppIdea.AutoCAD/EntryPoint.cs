@@ -18,6 +18,7 @@ namespace AwesomeAppIdea.AutoCAD
 
             Client = bootstrapper.Container.Resolve<IClient>();
             Client.Load();
+
         }
 
         public void Terminate()
